@@ -49,8 +49,7 @@ export function Nav() {
           className="text-[0.95rem] font-medium tracking-tight"
           onClick={() => setOpen(false)}
         >
-          TellurOm
-          <span className="text-accent">.</span>
+          Tellur Om
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">
@@ -69,7 +68,7 @@ export function Nav() {
                   <span
                     aria-hidden
                     className={cn(
-                      "absolute -bottom-2 left-1/2 h-[3px] w-[3px] -translate-x-1/2 rounded-full bg-accent transition-opacity",
+                      "absolute -bottom-2 left-1/2 h-0.75 w-0.75 -translate-x-1/2 rounded-full bg-accent transition-opacity",
                       isActive ? "opacity-100" : "opacity-0",
                     )}
                   />

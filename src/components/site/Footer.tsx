@@ -28,6 +28,12 @@ export function Footer() {
           >
             Email
           </a>
+          <a
+            className="link-arrow transition-colors hover:text-foreground"
+            href={`tel:${profile.phone}`}
+          >
+            90112873073
+          </a>
         </nav>
       </div>
       <div className="shell flex flex-col gap-2 border-t border-border py-5 sm:flex-row sm:justify-between">

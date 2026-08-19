@@ -5,6 +5,7 @@ export const profile = {
   location: "Navi Mumbai, India",
   graduation: "2028",
   email: "tellurom108@gmail.com",
+  phone: "90112873073",
   github: "https://github.com/TellurOm",
   linkedin: "https://www.linkedin.com/in/naanetellurom108/",
   resume: "https://drive.google.com/file/d/1OF_p_Qq2fm6GZmc4ACTDVJb3KMISBClk/view?usp=drive_link",

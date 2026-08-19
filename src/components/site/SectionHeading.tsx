@@ -6,10 +6,10 @@ export function SectionHeading({
   title,
   className,
 }: {
-  index?: string;
+  index?: string | undefined;
   eyebrow: string;
-  title?: string;
-  className?: string;
+  title?: string | undefined;
+  className?: string | undefined;
 }) {
   return (
     <Reveal className={className}>
@@ -18,7 +18,7 @@ export function SectionHeading({
         <span className="eyebrow">{eyebrow}</span>
       </div>
       {title ? (
-        <h2 className="mt-5 max-w-3xl text-3xl leading-[1.08] font-medium tracking-tightest text-balance sm:text-4xl md:text-5xl">
+        <h2 className="tracking-tightest mt-5 max-w-3xl text-3xl leading-[1.08] font-medium text-balance sm:text-4xl md:text-5xl">
           {title}
         </h2>
       ) : null}

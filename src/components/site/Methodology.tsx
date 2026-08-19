@@ -45,8 +45,8 @@ export function Methodology() {
             </button>
             <div
               className={cn(
-                "grid overflow-hidden transition-all duration-500",
-                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+                "overflow-hidden transition-all duration-500 ease-out",
+                isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0",
               )}
             >
               <p className="max-w-2xl pb-5 pl-8 text-sm leading-relaxed text-muted-foreground md:pl-16">

@@ -101,20 +101,28 @@ export function HeroVisual() {
       {nodes
         .filter((n) => n.label)
         .map((n, i) => (
-          <motion.span
+          <span
             key={n.id}
-            className="eyebrow absolute text-[0.6rem] whitespace-nowrap"
+            className="pointer-events-none absolute"
             style={{
               left: `${n.x}%`,
               top: `${n.y}%`,
-              transform: `translate(${n.x > 55 ? "-100%" : "0"}, ${n.y > 55 ? "6px" : "-22px"})`,
             }}
-            initial={reduce ? { opacity: 1 } : { opacity: 0, y: 4 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9 + i * 0.1 }}
           >
-            {n.label}
-          </motion.span>
+            <motion.span
+              className="eyebrow absolute text-[0.6rem] whitespace-nowrap"
+              style={{
+                right: n.x > 55 ? "0.5rem" : "auto",
+                left: n.x > 55 ? "auto" : "0.5rem",
+                top: n.y > 55 ? "0.4rem" : "-1.4rem",
+              }}
+              initial={reduce ? { opacity: 1 } : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.9 + i * 0.1 }}
+            >
+              {n.label}
+            </motion.span>
+          </span>
         ))}
 
       <span className="eyebrow absolute bottom-3 left-3 text-[0.6rem]">

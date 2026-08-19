@@ -59,7 +59,7 @@ export function Nav() {
             return (
               <li key={item.href}>
                 <a
-                  href={item.href}
+                  href={`/${item.href}`}
                   className={cn(
                     "relative text-[0.8125rem] transition-colors",
                     isActive
@@ -135,7 +135,7 @@ export function Nav() {
           {navItems.map((item) => (
             <li key={item.href} className="border-b border-border last:border-0">
               <a
-                href={item.href}
+                href={`/${item.href}`}
                 onClick={() => setOpen(false)}
                 className="flex items-center justify-between py-3.5 text-sm text-muted-foreground"
               >

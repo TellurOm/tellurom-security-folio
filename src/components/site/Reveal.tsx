@@ -3,10 +3,9 @@ import type { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-  delay?: number;
-  className?: string;
-  y?: number;
-  as?: "div" | "section" | "li" | "span";
+  delay?: number | undefined;
+  className?: string | undefined;
+  y?: number | undefined;
 };
 
 export function Reveal({ children, delay = 0, className, y = 18 }: Props) {

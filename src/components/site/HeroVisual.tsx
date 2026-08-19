@@ -103,19 +103,17 @@ export function HeroVisual() {
         .map((n, i) => (
           <span
             key={n.id}
-            className="pointer-events-none absolute"
+            className="pointer-events-none absolute whitespace-nowrap"
             style={{
               left: `${n.x}%`,
               top: `${n.y}%`,
+              transform: `translate(${n.x > 55 ? "calc(-100% - 0.6rem)" : "0.6rem"}, ${
+                n.y > 55 ? "0.3rem" : "-1.5rem"
+              })`,
             }}
           >
             <motion.span
-              className="eyebrow absolute text-[0.6rem] whitespace-nowrap"
-              style={{
-                right: n.x > 55 ? "0.5rem" : "auto",
-                left: n.x > 55 ? "auto" : "0.5rem",
-                top: n.y > 55 ? "0.4rem" : "-1.4rem",
-              }}
+              className="eyebrow text-[0.6rem]"
               initial={reduce ? { opacity: 1 } : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 + i * 0.1 }}

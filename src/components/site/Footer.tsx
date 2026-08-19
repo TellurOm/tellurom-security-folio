@@ -30,9 +30,9 @@ export function Footer() {
           </a>
           <a
             className="link-arrow transition-colors hover:text-foreground"
-            href={`tel:${profile.phone}`}
+            href={`tel:${profile.phone.replace(/\s+/g, "")}`}
           >
-            90112873073
+            Phone
           </a>
         </nav>
       </div>

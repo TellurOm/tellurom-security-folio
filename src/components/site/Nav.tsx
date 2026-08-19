@@ -62,9 +62,7 @@ export function Nav() {
                   href={`/${item.href}`}
                   className={cn(
                     "relative text-[0.8125rem] transition-colors",
-                    isActive
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground",
+                    isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {item.label}
@@ -152,7 +150,12 @@ export function Nav() {
           <a href={profile.linkedin} target="_blank" rel="noreferrer noopener">
             LinkedIn ↗
           </a>
-          <a href={profile.resume} target="_blank" rel="noreferrer noopener" className="text-accent">
+          <a
+            href={profile.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-accent"
+          >
             Resume ↗
           </a>
         </div>

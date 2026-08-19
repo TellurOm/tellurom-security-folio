@@ -104,7 +104,10 @@ function CaseStudyPage() {
           <Block index="02" heading="Approach">
             <ul className="space-y-4">
               {caseStudy.approach.map((a, i) => (
-                <li key={a} className="flex gap-5 text-[0.95rem] leading-relaxed text-muted-foreground">
+                <li
+                  key={a}
+                  className="flex gap-5 text-[0.95rem] leading-relaxed text-muted-foreground"
+                >
                   <span className="eyebrow shrink-0 pt-1">{String(i + 1).padStart(2, "0")}</span>
                   <span>{a}</span>
                 </li>

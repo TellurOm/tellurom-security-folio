@@ -7,7 +7,9 @@ export const profile = {
   email: "tellurom108@gmail.com",
   github: "https://github.com/TellurOm",
   linkedin: "https://www.linkedin.com/in/naanetellurom108/",
-  resume: "/TellurOm-Resume.pdf",
+  resume: "https://drive.google.com/file/d/1OF_p_Qq2fm6GZmc4ACTDVJb3KMISBClk/view?usp=drive_link",
+  certificate:
+    "https://drive.google.com/file/d/1q8wHuOjp2B9onFdW5sA__qnSuuIUy_Pu/view?usp=drive_link",
   intro:
     "B.Tech CSE Cyber Security student focused on ethical hacking, penetration testing, network security and continuous security research.",
 };

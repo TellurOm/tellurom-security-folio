@@ -42,7 +42,11 @@ export const Route = createFileRoute("/")({
           jobTitle: "B.Tech CSE — Cyber Security Student",
           email: `mailto:${profile.email}`,
           alumniOf: { "@type": "CollegeOrUniversity", name: "ITM Skills University" },
-          address: { "@type": "PostalAddress", addressLocality: "Navi Mumbai", addressCountry: "IN" },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Navi Mumbai",
+            addressCountry: "IN",
+          },
           sameAs: [profile.github, profile.linkedin],
           knowsAbout: [
             "Penetration Testing",
@@ -164,7 +168,7 @@ function MetaStrip() {
           <Reveal
             key={m.value}
             delay={i * 0.06}
-            className="border-b border-border px-0 py-6 md:border-b-0 md:border-l md:px-6 md:first:border-l-0 md:first:pl-0 [&:nth-child(2n)]:border-l [&:nth-child(2n)]:pl-6 md:[&:nth-child(2n)]:pl-6"
+            className="border-b border-border px-0 py-6 md:border-b-0 md:border-l md:px-6 md:first:border-l-0 md:first:pl-0 nth-[2n]:border-l nth-[2n]:pl-6 md:nth-[2n]:pl-6"
           >
             <dt className="text-[0.98rem] font-medium">{m.value}</dt>
             <dd className="mt-1.5 text-[0.8rem] text-muted-foreground">{m.label}</dd>
@@ -331,6 +335,17 @@ function Certification() {
             <p className="mt-6 text-lg text-muted-foreground">
               INE Security Junior Penetration Tester
             </p>
+            <div className="mt-8">
+              <a
+                href={profile.certificate}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="link-arrow inline-flex items-center justify-center bg-primary px-5 py-3 text-[0.85rem] font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                Open Certificate
+                <ArrowUpRight className="arrow size-4" strokeWidth={1.8} />
+              </a>
+            </div>
           </Reveal>
           <Reveal delay={0.1} className="md:col-span-5">
             <dl className="space-y-4 md:border-l md:border-border md:pl-10">
@@ -367,7 +382,7 @@ function Journey() {
             <li className="group relative grid gap-4 pb-14 pl-8 md:grid-cols-12 md:pl-12">
               <span
                 aria-hidden
-                className="absolute top-1.5 -left-[3.5px] size-1.5 rounded-full bg-border-strong transition-colors group-hover:bg-accent"
+                className="absolute top-1.5 left-[-3.5px] size-1.5 rounded-full bg-border-strong transition-colors group-hover:bg-accent"
               />
               <div className="md:col-span-4">
                 <span className="eyebrow">Stage {String(i + 1).padStart(2, "0")}</span>
@@ -390,7 +405,11 @@ function Beyond() {
   return (
     <section className="py-24 md:py-32">
       <div className="shell">
-        <SectionHeading index="07" eyebrow="Leadership & Event Contribution" title="Beyond Technical Work" />
+        <SectionHeading
+          index="07"
+          eyebrow="Leadership & Event Contribution"
+          title="Beyond Technical Work"
+        />
         <div className="mt-14 grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <Reveal>
@@ -468,7 +487,9 @@ function Connect() {
       <div className="grid gap-8 lg:grid-cols-12">
         <div className="lg:col-span-6">
           <Reveal>
-            <h2 className="tracking-tightest text-[2rem] font-medium sm:text-4xl">Let's connect.</h2>
+            <h2 className="tracking-tightest text-[2rem] font-medium sm:text-4xl">
+              Let's connect.
+            </h2>
           </Reveal>
         </div>
         <div className="lg:col-span-5 lg:col-start-8">

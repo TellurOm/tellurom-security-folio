@@ -60,19 +60,19 @@ The visual direction should be:
 
 Think of the intersection between:
 
-* modern developer portfolio
-* security engineering website
-* premium SaaS landing page
-* technical research portfolio
-* editorial design
+- modern developer portfolio
+- security engineering website
+- premium SaaS landing page
+- technical research portfolio
+- editorial design
 
 NOT:
 
-* hacker movie interface
-* cyberpunk dashboard
-* gaming website
-* generic student portfolio
-* AI-generated template
+- hacker movie interface
+- cyberpunk dashboard
+- gaming website
+- generic student portfolio
+- AI-generated template
 
 The site should have a strong visual identity but remain professional.
 
@@ -82,11 +82,11 @@ The site should have a strong visual identity but remain professional.
 
 Do NOT use the typical:
 
-* neon green
-* black + bright green
-* purple/blue AI gradient
-* cyan glow
-* excessive gradients
+- neon green
+- black + bright green
+- purple/blue AI gradient
+- cyan glow
+- excessive gradients
 
 Instead create a sophisticated neutral palette.
 
@@ -124,12 +124,12 @@ Use the accent sparingly.
 
 It should appear primarily on:
 
-* active navigation
-* small labels
-* important metadata
-* links
-* subtle indicators
-* selected states
+- active navigation
+- small labels
+- important metadata
+- links
+- subtle indicators
+- selected states
 
 Do NOT make the entire website green.
 
@@ -157,11 +157,11 @@ Typography should carry a significant part of the visual design.
 
 Use:
 
-* very large editorial hero typography
-* strong section headings
-* compact metadata
-* generous whitespace
-* clear hierarchy
+- very large editorial hero typography
+- strong section headings
+- compact metadata
+- generous whitespace
+- clear hierarchy
 
 Avoid oversized text simply for the sake of looking impressive.
 
@@ -185,14 +185,14 @@ Avoid making every section a collection of cards.
 
 Use different layout patterns:
 
-* asymmetric hero
-* editorial text blocks
-* horizontal skill lists
-* large project feature
-* timeline
-* split sections
-* minimal cards
-* full-width visual sections
+- asymmetric hero
+- editorial text blocks
+- horizontal skill lists
+- large project feature
+- timeline
+- split sections
+- minimal cards
+- full-width visual sections
 
 This variety is important.
 
@@ -212,12 +212,12 @@ Left:
 
 Center/right:
 
-* About
-* Work
-* Skills
-* Certification
-* Journey
-* Contact
+- About
+- Work
+- Skills
+- Certification
+- Journey
+- Contact
 
 Far right:
 
@@ -230,10 +230,10 @@ Resume button:
 
 The navbar should be:
 
-* transparent initially
-* slightly blurred when scrolling
-* separated by a very subtle border
-* compact
+- transparent initially
+- slightly blurred when scrolling
+- separated by a very subtle border
+- compact
 
 Do not make it a giant pill-shaped floating navbar.
 
@@ -365,12 +365,12 @@ Professional introduction based strictly on the resume.
 
 Explain that TellurOm is developing foundations in:
 
-* ethical hacking
-* vulnerability assessment
-* network security
-* Linux
-* security tooling
-* penetration testing
+- ethical hacking
+- vulnerability assessment
+- network security
+- Linux
+- security tooling
+- penetration testing
 
 Do not exaggerate expertise.
 
@@ -395,10 +395,10 @@ Items:
 
 Each item should have:
 
-* number
-* title
-* one-line explanation
-* subtle hover interaction
+- number
+- title
+- one-line explanation
+- subtle hover interaction
 
 When hovered, reveal a small accent line or technical detail.
 
@@ -681,9 +681,9 @@ Entry fee collection managed
 
 Also mention:
 
-* attendee management
-* event coordination
-* event promotion
+- attendee management
+- event coordination
+- event promotion
 
 Do not make this look like employment.
 
@@ -817,26 +817,26 @@ Use animation, but make it feel expensive.
 
 Good:
 
-* fade/slide section reveals
-* smooth page transitions
-* subtle text movement
-* project hover interactions
-* line animations
-* network-node movement
-* image masking
-* navigation transition
-* subtle button interactions
+- fade/slide section reveals
+- smooth page transitions
+- subtle text movement
+- project hover interactions
+- line animations
+- network-node movement
+- image masking
+- navigation transition
+- subtle button interactions
 
 Bad:
 
-* constant glowing
-* spinning objects
-* excessive particle systems
-* cursor-following blobs
-* giant parallax
-* bouncing text
-* glitching everything
-* animation on every card
+- constant glowing
+- spinning objects
+- excessive particle systems
+- cursor-following blobs
+- giant parallax
+- bouncing text
+- glitching everything
+- animation on every card
 
 The animation should be noticeable only when interacting with the website.
 
@@ -884,13 +884,13 @@ Do NOT simply stack desktop sections.
 
 On mobile:
 
-* hero typography scales properly
-* project methodology becomes vertical
-* navbar becomes compact menu
-* metadata becomes a clean 2-column grid
-* skill groups remain readable
-* project content remains easy to scan
-* buttons become full-width where appropriate
+- hero typography scales properly
+- project methodology becomes vertical
+- navbar becomes compact menu
+- metadata becomes a clean 2-column grid
+- skill groups remain readable
+- project content remains easy to scan
+- buttons become full-width where appropriate
 
 Test at:
 
@@ -910,10 +910,10 @@ No horizontal scrolling.
 
 Use modern components inspired by:
 
-* shadcn/ui
-* 21st.dev
-* React Bits
-* modern editorial portfolios
+- shadcn/ui
+- 21st.dev
+- React Bits
+- modern editorial portfolios
 
 But customize them heavily.
 
@@ -921,20 +921,20 @@ Do not simply import a template and replace the name.
 
 Use:
 
-* subtle borders
-* restrained shadows
-* minimal radii
-* strong typography
-* whitespace
-* asymmetric layouts
+- subtle borders
+- restrained shadows
+- minimal radii
+- strong typography
+- whitespace
+- asymmetric layouts
 
 Avoid:
 
-* every section inside a rounded rectangle
-* excessive glassmorphism
-* huge shadows
-* gradients everywhere
-* colorful badges everywhere
+- every section inside a rounded rectangle
+- excessive glassmorphism
+- huge shadows
+- gradients everywhere
+- colorful badges everywhere
 
 ---
 
@@ -988,13 +988,13 @@ The finished design must have its own visual identity.
 
 Use:
 
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* shadcn/ui
-* Lucide icons
-* Framer Motion / Motion where useful
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Lucide icons
+- Framer Motion / Motion where useful
 
 Use clean reusable components.
 
@@ -1002,13 +1002,13 @@ Keep the project static/frontend-first.
 
 Do NOT add:
 
-* Docker
-* Redis
-* unnecessary backend
-* unnecessary database
-* authentication
-* paid APIs
-* CMS
+- Docker
+- Redis
+- unnecessary backend
+- unnecessary database
+- authentication
+- paid APIs
+- CMS
 
 The website should deploy easily to modern static hosting.
 
@@ -1054,10 +1054,10 @@ Description:
 
 Add:
 
-* favicon
-* OpenGraph metadata
-* semantic HTML
-* proper heading hierarchy
+- favicon
+- OpenGraph metadata
+- semantic HTML
+- proper heading hierarchy
 
 ---
 
@@ -1065,13 +1065,13 @@ Add:
 
 Ensure:
 
-* keyboard navigation
-* visible focus states
-* readable contrast
-* accessible buttons
-* accessible mobile navigation
-* alt text
-* reduced-motion support
+- keyboard navigation
+- visible focus states
+- readable contrast
+- accessible buttons
+- accessible mobile navigation
+- alt text
+- reduced-motion support
 
 Do not sacrifice accessibility for visual effects.
 
@@ -1119,14 +1119,14 @@ Is the resume downloadable?
 
 Check:
 
-* no console errors
-* no broken links
-* no missing assets
-* no layout overflow
-* no broken animations
-* no mobile issues
-* no unnecessary dependencies
-* successful production build
+- no console errors
+- no broken links
+- no missing assets
+- no layout overflow
+- no broken animations
+- no mobile issues
+- no unnecessary dependencies
+- successful production build
 
 ---
 

@@ -123,9 +123,7 @@ export function HeroVisual() {
           </span>
         ))}
 
-      <span className="eyebrow absolute bottom-3 left-3 text-[0.6rem]">
-        FIG. 01 — FOCUS MAP
-      </span>
+      <span className="eyebrow absolute bottom-3 left-3 text-[0.6rem]">FIG. 01 — FOCUS MAP</span>
     </div>
   );
 }

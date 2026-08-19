@@ -10,33 +10,44 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorkPenetrationTestingLabsRouteImport } from './routes/work.penetration-testing-labs'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkPenetrationTestingLabsRoute =
+  WorkPenetrationTestingLabsRouteImport.update({
+    id: '/work/penetration-testing-labs',
+    path: '/work/penetration-testing-labs',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/work/penetration-testing-labs': typeof WorkPenetrationTestingLabsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/work/penetration-testing-labs': typeof WorkPenetrationTestingLabsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/work/penetration-testing-labs': typeof WorkPenetrationTestingLabsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/work/penetration-testing-labs'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/work/penetration-testing-labs'
+  id: '__root__' | '/' | '/work/penetration-testing-labs'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  WorkPenetrationTestingLabsRoute: typeof WorkPenetrationTestingLabsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +59,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/penetration-testing-labs': {
+      id: '/work/penetration-testing-labs'
+      path: '/work/penetration-testing-labs'
+      fullPath: '/work/penetration-testing-labs'
+      preLoaderRoute: typeof WorkPenetrationTestingLabsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  WorkPenetrationTestingLabsRoute: WorkPenetrationTestingLabsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

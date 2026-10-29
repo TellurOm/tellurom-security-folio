@@ -49,7 +49,7 @@ export function Nav() {
           className="text-[0.95rem] font-medium tracking-tight"
           onClick={() => setOpen(false)}
         >
-          Tellur Om
+          TellurOm
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">
